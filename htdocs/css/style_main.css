@@ -6,13 +6,53 @@ background: radial-gradient(ellipse at bottom, #333333 0%, #333333 80%);
 background-size:100% auto;
 background-size: cover;
 overflow: hidden;
+font-family: 'Lato', sans-serif;
 }
 .input_form{
     margin-top:4px;
     margin-left: auto;
-    padding: 8px 16px;
+    margin-right: auto;
+	padding: 8px 16px;
     background: transparent;
     color: #f2f2f2;
     text-transform: uppercase;
     letter-spacing: .09em;
 }
+
+table.fightTable {
+  background-color: #FFFFFF;
+  width: 50%;
+  border-collapse: collapse;
+  box-shadow: 4px 4px 10px #888888;
+  border-radius: 20px;
+  padding: 30px; 
+  margin-left: auto;
+  margin-right: auto;
+  border: solid #333333 80%;
+  
+}
+table.fightTable td, table.fightTable th {
+  border: 1px solid #AAAAAA;
+  padding: 5px 4px;
+  text-align: center;
+}
+table.fightTable tbody td {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
+table.fightTable tr:nth-child(even) {
+  background: #DCDCDC;
+}
+
+table.fightTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline;
+  color: #000000;
+  border-left: 2px solid #D0E4F5;
+}
+
+
+
