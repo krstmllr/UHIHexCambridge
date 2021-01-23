@@ -5,113 +5,116 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style_main.css">
 </head>
 <body onload="init()">
 	<h1>TODO: find a good title</h1>
 	<hr />
 	<div class="input_form" id="formContainer" >
-		<h2 id="heading">Heading</h1>
+		<h2 id="heading">Heading</h2>
 		<form id="form" action="">
-			<label for="company1" >Company 1</label>
-			<input id="company1" autocomplete="off" />
-			<label for="company1" >Company 2</label>
-			<input id="company2" autocomplete="off" />
+			<label for="company1" >Company 1:</label>
+			<input id="company1" autocomplete="on" />
+			<label for="company1" >Company 2:</label>
+			<input id="company2" autocomplete="on" />
 			<button id="btnSubmit">Fight!</button>
 		</form>
 	</div>
-	<table class="blueTable">
+	<p></p>
+	<table width="51%" class="fightTable">
   <thead>
 <tr>
-<th colspan="2">Fighter One</th>
-<th colspan="2">Fighter Two</th>
+<th colspan="2" id="companyLabel1" >Company One</th> <!--Make this so company name is the header?-->
+<th colspan="2" id="companyLabel2">Company Two</th>
 </tr>
 </thead>
 <tfoot>
 </tfoot>
 <tbody>
 <tr>
-<td width="163">Alcoholic Beverages</td>
-<td width="123"></td>
-<td width="118">&nbsp;</td>
-<td width="185">Alcoholic Beverages</td>
+<td width="201" >Alcoholic Beverages</td>
+<td width="186" id="ab1">&nbsp;</td>
+<td width="174" id="ab2">&nbsp;</td>
+<td width="222">Alcoholic Beverages</td>
 </tr>
 <tr>
-<td>Adult Entertainment&nbsp;</td>
-<td></td>
-<td>&nbsp;</td>
-<td>Adult Entertainment&nbsp;</td>
+<td>Adult Entertainment</td>
+<td id="ae1">&nbsp;</td>
+<td id="ae2">&nbsp;</td>
+<td>Adult Entertainment</td>
 </tr>
 <tr>
 <td>Gambling</td>
-<td></td>
-<td>&nbsp;</td>
+<td id="g1">&nbsp;</td>
+<td id="g2">&nbsp;</td>
 <td>Gambling</td>
 </tr>
 <tr>
 <td>Tobacco Products</td>
-<td></td>
-<td>&nbsp;</td>
+<td id="tp1">&nbsp;</td>
+<td id="tp2">&nbsp;</td>
 <td>Tobacco Products</td>
 </tr>
 <tr>
 <td>Animal Testing</td>
-<td></td>
-<td>&nbsp;</td>
+<td id="at1">&nbsp;</td>
+<td id="at2">&nbsp;</td>
 <td>Animal Testing</td>
 </tr>
  <tr>
 <td>Fur and Specialty Leather</td>
-<td></td>
-<td>&nbsp;</td>
+<td id="fsl1">&nbsp;</td>
+<td id="fsl2">&nbsp;</td>
 <td>Fur and Specialty Leather</td>
  </tr>
 <tr>
 <td>Controversial Weapons</td>
-<td></td>
-<td>&nbsp;</td>
+<td id="cw1">&nbsp;</td>
+<td id="cw2">&nbsp;</td>
 <td>Controversial Weapons</td>
 </tr>
 <tr>
 <td>Small Arms</td>
-<td></td>
-<td>&nbsp;</td>
+<td id="sa1">&nbsp;</td>
+<td id="sa2" >&nbsp;</td>
 <td>Small Arms</td>
 </tr>
 <tr>
 <td>Catholic Values</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td id="cv1">&nbsp;</td>
+<td id="cv2">&nbsp;</td>
 <td>Catholic Values</td>
 </tr>
 <tr>
 <td>GMO</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td id="gmo1">&nbsp;</td>
+<td id="gmo2">&nbsp;</td>
 <td>GMO</td>
 </tr>
 <tr>
 <td>Military Contracting</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td id="mc1">&nbsp;</td>
+<td id="mc2">&nbsp;</td>
 <td>Military Contracting</td>
 </tr>
 <tr>
 <td>Pesticides</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td id="p1">&nbsp;</td>
+<td id="p2">&nbsp;</td>
 <td>Pesticides</td>
 </tr>
 <tr>
 <td>Thermal Coal</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td id="tc1">&nbsp;</td>
+<td id="tc2">&nbsp;</td>
 <td>Thermal Coal</td>
 </tr>
 <tr>
 <td>Palm Oil</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td id="po1">&nbsp;</td>
+<td id="po2">&nbsp;</td>
 <td>Palm Oil</td>
 </tr>
 </tbody>
