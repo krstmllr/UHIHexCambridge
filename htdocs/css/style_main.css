@@ -2,7 +2,7 @@ html {
 margin: 0px;
 padding: 0px;
 height: 100%;
-background: radial-gradient(ellipse at bottom, #b6383e 0%, #b6383e 80%);
+background: radial-gradient(ellipse at bottom, #333333 0%, #333333 80%);
 background-size:100% auto;
 background-size: cover;
 overflow: hidden;
@@ -12,7 +12,6 @@ overflow: hidden;
     margin-left: auto;
     padding: 8px 16px;
     background: transparent;
-    border: 3px solid #ffffff;
     color: #f2f2f2;
     text-transform: uppercase;
     letter-spacing: .09em;
