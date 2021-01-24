@@ -55,7 +55,7 @@ font-family: 'Josefin Sans', sans-serif;
 border-color:#ffffff;
 }
 #container {
-    height:100vh;
+    height:100%;
     display: flex;           /* establish flex container */
     flex-direction: column;  /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
