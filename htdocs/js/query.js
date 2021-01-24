@@ -1,6 +1,4 @@
 function init() {
-	document.getElementById("company1").addEventListener("keyup", autocomplete);
-	document.getElementById("company2").addEventListener("keyup", autocomplete);
 	document.getElementById("btnSubmit").addEventListener("click", compare);
 }
 const tblfields = [
@@ -21,16 +19,18 @@ function autocomplete() {}
 function compare() {
 	event.preventDefault();
 	console.log("button pushed");
-	let cp1 = document.getElementById("company1");
-	let cp2 = document.getElementById("company2");
-	yahooQuery(cp1.value, 'UK')
+	let cp1 = document.getElementById("fighter1");
+	let cp2 = document.getElementById("fighter2");
+	console.dir(cp1);
+	console.log(cp2.value);
+	yahooQuery(cp1.value.symbol, 'UK')
 	.then(data => {
 		console.log(data.esgScores);
 		let lbl = document.getElementById("companyLabel1");
 		lbl.textContent = data.quoteType.longName;
 		fillTable(1,data.esgScores);
 	});
-	yahooQuery(cp2.value, 'UK')
+	yahooQuery(cp2.value.symbol, 'UK')
 	.then(data => {
 		console.log(data);
 		let lbl = document.getElementById("companyLabel2");
