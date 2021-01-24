@@ -26,11 +26,15 @@ function compare() {
 	yahooQuery(cp1.value, 'UK')
 	.then(data => {
 		console.log(data.esgScores);
+		let lbl = document.getElementById("companyLabel1");
+		lbl.textContent = data.quoteType.longName;
 		fillTable(1,data.esgScores);
 	});
 	yahooQuery(cp2.value, 'UK')
 	.then(data => {
-		console.log(data.esgScores);
+		console.log(data);
+		let lbl = document.getElementById("companyLabel2");
+		lbl.textContent = data.quoteType.longName;
 		fillTable(2,data.esgScores);
 	});
 }
