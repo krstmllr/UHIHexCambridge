@@ -68,7 +68,7 @@ async function yahooQuery(symbol, region = "US", other = {}) {
 		headers: {
 			'Content-Type': 'application/json',
 			'x-rapidapi-host': 'apidojo-yahoo-finance-v1.p.rapidapi.com',
-			'x-rapidapi-key': 'kzEH72A7XdmshDjaWc6NW5cpHRZKp1Xe3pqjsnUBEmKb7vmH2l'
+			'x-rapidapi-key': 'fc0734c9f9msh31df8e2c2d944ccp100f9bjsn71384937e883'
 		},
 		redirect: 'follow'
 	});

@@ -29,7 +29,7 @@ function complete1(){
 				"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete?q="+ searchTerm +	"&region=US",
 				"method": "GET",
 				"headers": {
-					"x-rapidapi-key": "763bf79547msh646e4e1e2336736p1dc444jsnd47ced1373ad",
+					"x-rapidapi-key": "fc0734c9f9msh31df8e2c2d944ccp100f9bjsn71384937e883",
 					"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
 				},
 				"success" : fillAutoComplete1
@@ -54,7 +54,7 @@ function complete2(){
 				"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete?q="+ searchTerm +	"&region=US",
 				"method": "GET",
 				"headers": {
-					"x-rapidapi-key": "763bf79547msh646e4e1e2336736p1dc444jsnd47ced1373ad",
+					"x-rapidapi-key": "fc0734c9f9msh31df8e2c2d944ccp100f9bjsn71384937e883",
 					"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
 				},
 				"success" : fillAutoComplete2
