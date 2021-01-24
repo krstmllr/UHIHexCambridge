@@ -18,8 +18,6 @@ function getDetails(){
 
 var nameList1 = [];
 var nameList2 = [];
-var symbList1 = [];
-var symbList2 = [];
 
 function complete1(){
 	if ($("fighter1").focus()){
@@ -31,7 +29,7 @@ function complete1(){
 				"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete?q="+ searchTerm +	"&region=US",
 				"method": "GET",
 				"headers": {
-					"x-rapidapi-key": "52cabcb3b8msh480d3436f09d800p1e2abdjsn8af63ba68756",
+					"x-rapidapi-key": "763bf79547msh646e4e1e2336736p1dc444jsnd47ced1373ad",
 					"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
 				},
 				"success" : fillAutoComplete1
@@ -40,8 +38,7 @@ function complete1(){
 			$.ajax(settings).done(function (response) {
 			console.log(response);
 			for (var i = 0; i < 6; i++) {
-				nameList1.push(response.quotes[i].shortname);
-				symbList1.push(response.quotes[i].symbol);
+				nameList1.push(response.quotes[i].shortname + " (" + response.quotes[i].symbol + ")");
 			}
 	});
 	};
@@ -57,7 +54,7 @@ function complete2(){
 				"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/auto-complete?q="+ searchTerm +	"&region=US",
 				"method": "GET",
 				"headers": {
-					"x-rapidapi-key": "52cabcb3b8msh480d3436f09d800p1e2abdjsn8af63ba68756",
+					"x-rapidapi-key": "763bf79547msh646e4e1e2336736p1dc444jsnd47ced1373ad",
 					"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
 				},
 				"success" : fillAutoComplete2
@@ -66,8 +63,7 @@ function complete2(){
 			$.ajax(settings).done(function (response) {
 			console.log(response);
 			for (var i = 0; i < 6; i++) {
-				nameList2.push(response.quotes[i].shortname);
-				symbList2.push(response.quotes[i].symbol);
+				nameList2.push(response.quotes[i].shortname + " (" + response.quotes[i].symbol + ")");
 			}
 	});
 	};
