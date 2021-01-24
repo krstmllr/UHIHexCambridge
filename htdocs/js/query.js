@@ -63,13 +63,12 @@ async function yahooQuery(symbol, region = "US", other = {}) {
 		url+="symbol="+symbol+"&";
 	}
 	url+="region="+region;
-
 	const response = await fetch(url, {
 		method: 'GET', // *GET, POST, PUT, DELETE, etc.
 		headers: {
 			'Content-Type': 'application/json',
 			'x-rapidapi-host': 'apidojo-yahoo-finance-v1.p.rapidapi.com',
-			'x-rapidapi-key': '763bf79547msh646e4e1e2336736p1dc444jsnd47ced1373ad'
+			'x-rapidapi-key': 'kzEH72A7XdmshDjaWc6NW5cpHRZKp1Xe3pqjsnUBEmKb7vmH2l'
 		},
 		redirect: 'follow'
 	});
