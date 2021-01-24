@@ -7,6 +7,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style_main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="init()">
 
@@ -15,11 +18,11 @@
 		
 	<div class="input_form" id="formContainer" >
 
-		<form id="form" action="">
+		<form id="form" action="" class="ui-widget">
 			<center><label for="company1" >Company 1:</label>
-			<input id="company1" autocomplete="on" />
+			<input type="text" id="fighter1" onkeyup="complete1()">
 			<label for="company1" >Company 2:</label>
-			<input id="company2" autocomplete="on" /></br>
+			<input type="text" id="fighter2" onkeyup="complete2()">
 			</br>
 			<button id="btnSubmit">Compare</button></center>
 		</form>
