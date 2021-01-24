@@ -6,7 +6,7 @@ function getDetails(){
 		"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-summary?symbol="+ SYMB +"&region=US",
 		"method": "GET",
 		"headers": {
-			"x-rapidapi-key": "52cabcb3b8msh480d3436f09d800p1e2abdjsn8af63ba68756",
+			"x-rapidapi-key": "763bf79547msh646e4e1e2336736p1dc444jsnd47ced1373ad",
 			"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
 		}
 	};
