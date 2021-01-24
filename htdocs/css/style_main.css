@@ -5,9 +5,8 @@ height: 100%;
 background: radial-gradient(ellipse at bottom, #333333 0%, #333333 80%);
 background-size:100% auto;
 background-size: cover;
-overflow: hidden;
 font-family: 'Josefin Sans', sans-serif;
-font-size: 150%;
+font-size: 100%;
 }
 .input_form{
     margin-top:4px;
@@ -55,7 +54,6 @@ font-family: 'Josefin Sans', sans-serif;
 border-color:#ffffff;
 }
 #container {
-    height:100%;
     display: flex;           /* establish flex container */
     flex-direction: column;  /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -86,11 +84,7 @@ button{
     text-transform: uppercase;
     letter-spacing: .09em;
 }
-.main{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
+
 h1{
 	color:#ffffff;
 }
