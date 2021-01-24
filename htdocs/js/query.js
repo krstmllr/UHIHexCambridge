@@ -21,22 +21,28 @@ function compare() {
 	console.log("button pushed");
 	let cp1 = document.getElementById("fighter1");
 	let cp2 = document.getElementById("fighter2");
-	console.dir(cp1);
-	console.log(cp2.value);
-	yahooQuery(cp1.value.symbol, 'UK')
+	let c1sym = freeSymbol(cp1.value);
+	let c2sym = freeSymbol(cp2.value);
+	yahooQuery(c1sym, 'UK')
 	.then(data => {
 		console.log(data.esgScores);
 		let lbl = document.getElementById("companyLabel1");
 		lbl.textContent = data.quoteType.longName;
 		fillTable(1,data.esgScores);
 	});
-	yahooQuery(cp2.value.symbol, 'UK')
+	yahooQuery(c2sym, 'UK')
 	.then(data => {
 		console.log(data);
 		let lbl = document.getElementById("companyLabel2");
 		lbl.textContent = data.quoteType.longName;
 		fillTable(2,data.esgScores);
 	});
+}
+function freeSymbol(str){
+	let arr = str.split(")");
+	arr = arr[0].split("(")
+	console.log(arr);
+	return arr[1];
 }
 function fillTable(column,data) {
 	let tbl = [];
