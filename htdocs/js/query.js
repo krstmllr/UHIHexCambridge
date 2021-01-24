@@ -43,6 +43,11 @@ function fillTable(column,data) {
 	for(let i in tblfields) {
 		let field = document.getElementById(tblfields[i]+column);
 		field.textContent = data[jsonfields[i]];
+		if(data[jsonfields[i]]){
+			field.setAttribute("class", "fail");
+		} else {
+			field.setAttribute("class", "pass");
+		}
 	}
 }
 
